@@ -1,0 +1,7 @@
+C:\Users\pmang\source\repos\Page34Exercise\Page34Exercise\bin\Debug\Page34Exercise.exe.config
+C:\Users\pmang\source\repos\Page34Exercise\Page34Exercise\bin\Debug\Page34Exercise.exe
+C:\Users\pmang\source\repos\Page34Exercise\Page34Exercise\bin\Debug\Page34Exercise.pdb
+C:\Users\pmang\source\repos\Page34Exercise\Page34Exercise\obj\Debug\Page34Exercise.csprojResolveAssemblyReference.cache
+C:\Users\pmang\source\repos\Page34Exercise\Page34Exercise\obj\Debug\Page34Exercise.csproj.CoreCompileInputs.cache
+C:\Users\pmang\source\repos\Page34Exercise\Page34Exercise\obj\Debug\Page34Exercise.exe
+C:\Users\pmang\source\repos\Page34Exercise\Page34Exercise\obj\Debug\Page34Exercise.pdb
