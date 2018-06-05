@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WeatherMVC.Models.RainObservation>
+
+@{
+    ViewBag.Title = "Rainfall Collection Website";
+}
+
+<h2>Rainfall Reports</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IncchesRain)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WeatherStationID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncchesRain)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WeatherStationID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ObservationID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ObservationID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ObservationID })
+        </td>
+    </tr>
+}
+
+</table>
