@@ -1,0 +1,13 @@
+﻿@using CarQuotesMVC.Controllers
+@model CarQuote
+
+
+@{
+    ViewBag.Title = "ShowQuote";
+}
+
+<h2>Your quote is @string.Format("{0:0.00}",Model.Quote)</h2>
+
+@Html.ActionLink("Enter Another Quote","Index")
+
+

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CarQuoteDBModelStoreContainer" CdmEntityContainer="CarQuoteDBEntities">
+    <EntitySetMapping Name="CarQuotes">
+      <EntityTypeMapping TypeName="CarQuoteDBModel.CarQuote">
+        <MappingFragment StoreEntitySet="CarQuotes">
+          <ScalarProperty Name="Quote" ColumnName="Quote" />
+          <ScalarProperty Name="FullOrLiability" ColumnName="FullOrLiability" />
+          <ScalarProperty Name="NumberSpeedingTickets" ColumnName="NumberSpeedingTickets" />
+          <ScalarProperty Name="DUI" ColumnName="DUI" />
+          <ScalarProperty Name="CarModel" ColumnName="CarModel" />
+          <ScalarProperty Name="CarMake" ColumnName="CarMake" />
+          <ScalarProperty Name="CarYear" ColumnName="CarYear" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
