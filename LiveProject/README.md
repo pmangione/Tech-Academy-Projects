@@ -4,7 +4,8 @@ PROJECT HIGHLITES
 
 BACK END
 
-In the Models folder, I added a calculated property to three separate classes to determine if the class was instantiated within the past week. This was done to track if the following had occurred in the past 7 days: 1) A student had enrolled in the job placement service.   2) A student had applied for a specific job.  3) A student had been hired for a specific job.    
-This property was not mapped to the database to avoid the performance cost of making unnecessary future calls to the database.    
-Here is an example in the student job application class.  img
-Because these three classes used the same logic to for the calculated property, I created a helper method to perform the date calculation.    Link to Helper.cs
+In the Models folder, I added a calculated property to three separate classes to determine if the class was instantiated within the past week. This was done to track if the following had occurred in the past 7 days: 1) A student had enrolled in the job placement service.   2) A student had applied for a specific job.  3) A student had been hired for a specific job. This property was not mapped to the database to avoid the performance cost of making unnecessary future calls to the database.    
+<a href"https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/ScreenShotExamples/AddCalculatedPropertyToJobApplicationClass.PNG">SCREEN SHOT EXAMPLE OF CALCULATED PROPERTY</a> 
+
+Because these three classes used the same logic to for the calculated property, I created a helper method to perform the date calculation.
+SCREEN SHOT OF HELPER METHOD
