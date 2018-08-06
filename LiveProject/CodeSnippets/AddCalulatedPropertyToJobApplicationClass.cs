@@ -1,6 +1,7 @@
 public DateTime? JPApplicationDate { get; set; }
 public virtual JPStudent JPStudent { get; set; }
-        
+
+//****************MY CHANGES START HERE        
 [NotMapped]
 public bool? IsAppliedDateWithinOneWeekOfCurrentDate
 {
@@ -9,3 +10,4 @@ public bool? IsAppliedDateWithinOneWeekOfCurrentDate
 		return DateCalculateHelper.CalculateIsObjectCreatedWithinOneWeekOfCurrentDate(this.JPApplicationDate);
 	}
 }
+//****************MY CHANGES END HERE   
