@@ -16,7 +16,7 @@ In the Controllers folder, I added filtering functionality for searching the job
 <bR><bR><BR>
 
 
-FRONT END<BR>
+<B>FRONT END</B><BR><BR>
 In the Views folder, I added a search textbox to the page which lists the job application details for each student.  The search box allows the user to search by student name or student location.   This used HTMLHelpers for the form and textbox to pass the search information to the controller.  Details on the controller functionality are listed in the back end section. <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddSearchBarForStudentJobApplicationDetails.cs">CODE SNIPPET OF SEARCH BAR</a>
 <bR><bR>        
 
@@ -26,7 +26,7 @@ In the ViewModels folder, I created a class designed to display job application 
 In Views folder for the home student listing page, I built a method which allows the current location of a bootcamp student to display on the website with spaces between separate words. This method is necessary because the current location is an Enumeration property with values that are stored with no spaces.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/DisplayEnumLocationValueWithSpaces.cs">CODE SNIPPET OF VIEW MODEL CLASS</a>
 <bR><bR><br>        
  
-DATABASE <BR>
+<B>DATABASE</B> <BR><BR>
 In the Models folder, I added a DateTime property called HiredDate to the class which tracked the hiring information for each student.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddHireDateToStudentJobHiredRecords.cs">CODE SNIPPET OF ADDED DATETIME PROPERTY</a>  
 <br><br>
 Because this application uses the Code First Entity Framework, the change to this class also involved a change to the database structure.  Therefore, I also ran a database migration using an updated configuration file in which I added test hire dates.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddDateTimeTestDataForDatabaseMigration.cs">CODE SNIPPET OF ADDED TEST DATA</a>   
