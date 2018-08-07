@@ -2,7 +2,7 @@ Using the ASP.NET MVC framework, modified existing features and built new functi
 
 PROJECT HIGHLITES 
 
-BACK END
+<B>BACK END</B>
 
 In the Models folder, I added a calculated property to three separate classes to determine if the class was instantiated within the past week. This was done to track if the following had occurred in the past 7 days: 1) A student had enrolled in the job placement service.   2) A student had applied for a specific job.  3) A student had been hired for a specific job. This property was not mapped to the database to avoid the performance cost of making unnecessary future calls to the database.    
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddCalulatedPropertyToJobApplicationClass.cs">CODE SNIPPET OF CALCULATED PROPERTY</a> 
@@ -12,11 +12,11 @@ Because these three classes used the same logic to for the calculated property, 
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/HelperMethodCalculateIfObjectInstantiatedWithinPastWeek.cs">CODE SNIPPET OF HELPER METHOD</a>
 <BR>
 <BR>
-In the Controllers folder, I added filtering functionality for searching the job application details for each student.  This includes searching by student’s name or student’s location which required the use of LINQ  WHERE clauses.  In addition, a regular expression was also required for the location search because the locations were stored as Enumeration properties.  Enumeration values do not store spaces between words, but users are likely to add spaces in the location has more than one word. link to JPStudentRundown.cs  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/ControllerLogicToSearchByStudentNameOrLocation.cs">CODE SNIPPET OF SEARCHING FUNCTIONALITY</a>
+In the Controllers folder, I added filtering functionality for searching the job application details for each student.  This includes searching by student’s name or student’s location which required the use of LINQ  WHERE clauses.  In addition, a regular expression was also required for the location search because the locations were stored as Enumeration properties.  Enumeration values do not store spaces between words, but users are likely to add spaces in the location has more than one word. <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/ControllerLogicToSearchByStudentNameOrLocation.cs">CODE SNIPPET OF SEARCHING FUNCTIONALITY</a>
 <bR><bR><BR>
 
 
-FRONT END
+FRONT END<BR>
 In the Views folder, I added a search textbox to the page which lists the job application details for each student.  The search box allows the user to search by student name or student location.   This used HTMLHelpers for the form and textbox to pass the search information to the controller.  Details on the controller functionality are listed in the back end section. <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddSearchBarForStudentJobApplicationDetails.cs">CODE SNIPPET OF SEARCH BAR</a>
 <bR><bR>        
 
@@ -26,7 +26,7 @@ In the ViewModels folder, I created a class designed to display job application 
 In Views folder for the home student listing page, I built a method which allows the current location of a bootcamp student to display on the website with spaces between separate words. This method is necessary because the current location is an Enumeration property with values that are stored with no spaces.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/DisplayEnumLocationValueWithSpaces.cs">CODE SNIPPET OF VIEW MODEL CLASS</a>
 <bR><bR><br>        
  
-DATABASE
+DATABASE <BR>
 In the Models folder, I added a DateTime property called HiredDate to the class which tracked the hiring information for each student.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddHireDateToStudentJobHiredRecords.cs">CODE SNIPPET OF ADDED DATETIME PROPERTY</a>  
 <br><br>
-Because this application uses the Code First Entity Framework, the change to this class also involved a change to the database structure.  Therefore, I also ran a database migration using an updated configuration file in which I added test hire dates.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddDateTimeTestDataForDatabaseMigration.cs">CODE SNIPPET ADDED TEST DATA</a>   
+Because this application uses the Code First Entity Framework, the change to this class also involved a change to the database structure.  Therefore, I also ran a database migration using an updated configuration file in which I added test hire dates.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddDateTimeTestDataForDatabaseMigration.cs">CODE SNIPPET OF ADDED TEST DATA</a>   
