@@ -8,7 +8,7 @@ In the Models folder, I added a calculated property to three separate classes to
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddCalulatedPropertyToJobApplicationClass.cs">CODE SNIPPET OF CALCULATED PROPERTY</a> 
 <BR>
 <BR>
-Because these three classes used the same logic to for the calculated property, I created a helper method to perform the date calculation.
+Because these three above mentioned classes used the same logic to for the calculated property, I created a helper method to perform the date calculation.
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/HelperMethodCalculateIfObjectInstantiatedWithinPastWeek.cs">CODE SNIPPET OF HELPER METHOD</a>
 <BR>
 <BR>
@@ -29,4 +29,4 @@ In Views folder for the home student listing page, I built a method which allows
 <B>DATABASE</B> <BR><BR>
 In the Models folder, I added a DateTime property called HiredDate to the class which tracked the hiring information for each student.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddHireDateToStudentJobHiredRecords.cs">CODE SNIPPET OF ADDED DATETIME PROPERTY</a>  
 <br><br>
-Because this application uses the Code First Entity Framework, the change to this class also involved a change to the database structure.  Therefore, I also ran a database migration using an updated configuration file in which I added test hire dates.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddDateTimeTestDataForDatabaseMigration.cs">CODE SNIPPET OF ADDED TEST DATA</a>   
+Because this application uses the Code First Entity Framework, the above mentioned change to this class also involved a change to the database structure.  Therefore, I also ran a database migration using an updated configuration file in which I added test hire dates.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddDateTimeTestDataForDatabaseMigration.cs">CODE SNIPPET OF ADDED TEST DATA FOR DATETIME PROPERTY</a>   
