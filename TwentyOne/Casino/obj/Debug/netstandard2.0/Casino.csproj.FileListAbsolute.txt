@@ -1,8 +1,0 @@
-C:\Users\pmang\source\repos\TwentyOne\Casino\bin\Debug\netstandard2.0\Casino.deps.json
-C:\Users\pmang\source\repos\TwentyOne\Casino\bin\Debug\netstandard2.0\Casino.dll
-C:\Users\pmang\source\repos\TwentyOne\Casino\bin\Debug\netstandard2.0\Casino.pdb
-C:\Users\pmang\source\repos\TwentyOne\Casino\obj\Debug\netstandard2.0\Casino.csproj.CoreCompileInputs.cache
-C:\Users\pmang\source\repos\TwentyOne\Casino\obj\Debug\netstandard2.0\Casino.AssemblyInfoInputs.cache
-C:\Users\pmang\source\repos\TwentyOne\Casino\obj\Debug\netstandard2.0\Casino.AssemblyInfo.cs
-C:\Users\pmang\source\repos\TwentyOne\Casino\obj\Debug\netstandard2.0\Casino.dll
-C:\Users\pmang\source\repos\TwentyOne\Casino\obj\Debug\netstandard2.0\Casino.pdb

@@ -1,7 +1,0 @@
-C:\Users\pmang\source\repos\ExercisePage36\ExercisePage36\bin\Debug\ExercisePage36.exe.config
-C:\Users\pmang\source\repos\ExercisePage36\ExercisePage36\bin\Debug\ExercisePage36.exe
-C:\Users\pmang\source\repos\ExercisePage36\ExercisePage36\bin\Debug\ExercisePage36.pdb
-C:\Users\pmang\source\repos\ExercisePage36\ExercisePage36\obj\Debug\ExercisePage36.csprojResolveAssemblyReference.cache
-C:\Users\pmang\source\repos\ExercisePage36\ExercisePage36\obj\Debug\ExercisePage36.csproj.CoreCompileInputs.cache
-C:\Users\pmang\source\repos\ExercisePage36\ExercisePage36\obj\Debug\ExercisePage36.exe
-C:\Users\pmang\source\repos\ExercisePage36\ExercisePage36\obj\Debug\ExercisePage36.pdb
