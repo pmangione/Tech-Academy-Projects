@@ -1,10 +1,10 @@
-This is an MCV web application I completed as part of my Tech Academy coursework.
+<b>This is an MCV web application I completed as project for my Tech Academy coursework.</b>
 
 A notable accomplishment was the creation of a method that calculates a person's current age based on the current date.  I started with research on Google, but found many suggestions that were too complex because of the leap year.  My method is fairly simple and avoids conditional logic involving leap years.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/CarQuotesMVC/CarQuotesMVC/Models/AgeFromBirthdayCalculator.cs">Here is a link to this method.</a>
 
 <br>
-The initial requirements are listed below: 
-
+<b>The initial requirements are listed below:</b> 
+<br>
 MVC PRACTICAL EXERCISE
 You've been tasked with building an application for generating quotes for car insurance.
 
