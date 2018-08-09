@@ -8,7 +8,7 @@ In the Models folder, I added a calculated property to three separate classes to
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddCalulatedPropertyToJobApplicationClass.cs">CODE SNIPPET OF CALCULATED PROPERTY</a> 
 <BR><a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/Code/JPApplication.cs">ENTIRE FILE OF CALCULATED PROPERTY</a> 
 <BR><BR>
-Because these three above mentioned classes used the same logic to for the calculated property, I created a helper method to perform the date calculation.
+Because these three above mentioned classes used the same logic to for the calculated property, I created a helper method to perform the date calculation.<BR>
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/HelperMethodCalculateIfObjectInstantiatedWithinPastWeek.cs">CODE SNIPPET OF HELPER METHOD FOR CALCULATED PROPERTY</a>
 <BR>
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/Code/Helpers.cs">ENTIRE FILE OF HELPER METHOD FOR CALCULATED PROPERTY</a>
@@ -26,19 +26,18 @@ In the Views folder, I added a search textbox to the page which lists the job ap
  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/Code/IndexJPStudentRundown.cshtml">ENTIRE FILE WITH SEARCH BAR</a>
 <bR><bR>        
 
-In the ViewModels folder, I created a class designed to display job application details for each student.  For the sake of code readability, I use “this” when assigning the class properties in the constructor.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/CreateViewModelForStudentJobApplicationDetails.cs">CODE SNIPPET OF VIEW MODEL CLASS</a> <BR>
+In the ViewModels folder, I created a class designed to display job application details for each student.  For the sake of code readability, I use “this” when assigning the class properties in the constructor.<BR>  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/CreateViewModelForStudentJobApplicationDetails.cs">CODE SNIPPET OF VIEW MODEL CLASS</a> <BR>
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/Code/JPStudentRundown.cs">ENTIRE FILE OF VIEW MODEL CLASS</a>
 
 <bR><bR>        
 
-In Views folder for the home student listing page, I built a method which allows the current location of a bootcamp student to display on the website with spaces between separate words. This method is necessary because the current location is an Enumeration property with values that are stored with no spaces.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/DisplayEnumLocationValueWithSpaces.cs">CODE SNIPPET OF METHOD TO DISPLAY LOCATION WITH SPACES</a> <BR>
+In Views folder for the home student listing page, I built a method which allows the current location of a bootcamp student to display on the website with spaces between separate words. This method is necessary because the current location is an Enumeration property with values that are stored with no spaces.<BR>  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/DisplayEnumLocationValueWithSpaces.cs">CODE SNIPPET OF METHOD TO DISPLAY LOCATION WITH SPACES</a> <BR>
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/Code/Index.cshtml">ENTIRE FILE WITH METHOD TO DISPLAY LOCATION WITH SPACES</a>
 <bR><bR><br>        
  
 <B>DATABASE</B> <BR><BR>
-In the Models folder, I added a DateTime property called HiredDate to the class which tracked the hiring information for each student.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddHireDateToStudentJobHiredRecords.cs">CODE SNIPPET OF ADDED DATETIME PROPERTY</a>  
-<BR>
+In the Models folder, I added a DateTime property called HiredDate to the class which tracked the hiring information for each student.<BR>  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddHireDateToStudentJobHiredRecords.cs">CODE SNIPPET OF ADDED DATETIME PROPERTY</a>  
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/Code/JPHire.cs">ENTIRE FILE WITH ADDED DATETIME PROPERTY</a> 
 <br><br>
-Because this application uses the Code First Entity Framework, the above mentioned change to this class also involved a change to the database structure.  Therefore, I also ran a database migration using an updated configuration file in which I added test hire dates.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddDateTimeTestDataForDatabaseMigration.cs">CODE SNIPPET OF ADDED TEST DATA FOR DATETIME PROPERTY</a>
+Because this application uses the Code First Entity Framework, the above mentioned change to this class also involved a change to the database structure.  Therefore, I also ran a database migration using an updated configuration file in which I added test hire dates.<BR>  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddDateTimeTestDataForDatabaseMigration.cs">CODE SNIPPET OF ADDED TEST DATA FOR DATETIME PROPERTY</a>
     
