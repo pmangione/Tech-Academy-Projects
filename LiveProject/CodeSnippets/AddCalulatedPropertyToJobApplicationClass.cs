@@ -11,4 +11,3 @@ public bool? IsAppliedDateWithinOneWeekOfCurrentDate
 	}
 }
 //****************MY CHANGES END HERE   
-https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddCalulatedPropertyToJobApplicationClass.cs
