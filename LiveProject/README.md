@@ -17,7 +17,7 @@ In the Controllers folder, I added filtering functionality for searching the job
 
 
 <B>FRONT END</B><BR><BR>
-In the Views folder, I added a search textbox to the page which lists the job application details for each student.  The search box allows the user to search by student name or student location.   This used HTMLHelpers for the form and textbox to pass the search information to the controller.  Details on the controller functionality are listed in the back end section. <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddSearchBarForStudentJobApplicationDetails.cs">CODE SNIPPET OF SEARCH BAR</a>
+In the Views folder, I added a search textbox to the page which lists the job application details for each student.  The search box allows the user to search by student name or student location.   This used HTMLHelpers and model binding to pass the search information to the controller.  Details on the controller functionality are listed in the back end section. <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddSearchBarForStudentJobApplicationDetails.cs">CODE SNIPPET OF SEARCH BAR</a>
 <bR><bR>        
 
 In the ViewModels folder, I created a class designed to display job application details for each student.  For the sake of code readability, I use “this” when assigning the class properties in the constructor.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/CreateViewModelForStudentJobApplicationDetails.cs">CODE SNIPPET OF VIEW MODEL CLASS</a>
