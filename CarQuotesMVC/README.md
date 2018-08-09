@@ -4,7 +4,7 @@ A notable accomplishment was the creation of a method that calculates a person's
 
 <br>
 <b>The initial requirements are listed below:</b> 
-<br>
+<br><br>
 MVC PRACTICAL EXERCISE
 You've been tasked with building an application for generating quotes for car insurance.
 
