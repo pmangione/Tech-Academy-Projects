@@ -1,4 +1,4 @@
-Using the ASP.NET MVC framework, modified existing features and built new functionality for the job application tracking section of a software bootcamp web application.  Specifically, this section tracks the job search process for students in the software bootcamp including where they have applied, how long they have been looking for a job, and which companies they have applied to. 
+Using the ASP.NET MVC framework, I modified existing features and built new functionality for the job application tracking section of a software bootcamp web application.  Specifically, this section tracks the job search process for students in the software bootcamp including where they have applied, how long they have been looking for a job, and which companies they have applied to. 
 
 PROJECT HIGHLITES 
 
@@ -12,18 +12,18 @@ Because these three above mentioned classes used the same logic to for the calcu
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/HelperMethodCalculateIfObjectInstantiatedWithinPastWeek.cs">CODE SNIPPET OF HELPER METHOD FOR CALCULATED PROPERTY</a>
 <BR>
 <BR>
-In the Controllers folder, I added filtering functionality for searching the job application details for each student.  This includes searching by student’s name or student’s location which required the use of LINQ  WHERE clauses.  In addition, a regular expression was also required for the location search because the locations were stored as Enumeration properties.  Enumeration values do not store spaces between words, but users are likely to add spaces in the location has more than one word. <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/ControllerLogicToSearchByStudentNameOrLocation.cs">CODE SNIPPET OF SEARCHING FUNCTIONALITY</a>
+In the Controllers folder, I added filtering functionality for searching the job application details for each student.  This includes searching by a student’s name or a student’s location which required the use of LINQ  WHERE clauses.  In addition, a regular expression was also required for the location search because the locations were stored as Enumeration properties.  Enumeration values do not store spaces between words, but users are likely to add spaces in a location has more than one word. <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/ControllerLogicToSearchByStudentNameOrLocation.cs">CODE SNIPPET OF SEARCHING FUNCTIONALITY</a>
 <bR><bR><BR>
 
 
 <B>FRONT END</B><BR><BR>
-In the Views folder, I added a search textbox to the page which lists the job application details for each student.  The search box allows the user to search by student name or student location.   This used HTMLHelpers and model binding to pass the search information to the controller.  Details on the controller functionality are listed in the back end section. <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddSearchBarForStudentJobApplicationDetails.cs">CODE SNIPPET OF SEARCH BAR</a>
+In the Views folder, I added a search textbox to the page which lists the job application details for each student.  The search box allows the user to search by student name or student location.   HTMLHelpers and model binding were used to pass the search information to the controller.  Details on the controller functionality are listed in the back end section. <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddSearchBarForStudentJobApplicationDetails.cs">CODE SNIPPET OF SEARCH BAR</a>
 <bR><bR>        
 
 In the ViewModels folder, I created a class designed to display job application details for each student.  For the sake of code readability, I use “this” when assigning the class properties in the constructor.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/CreateViewModelForStudentJobApplicationDetails.cs">CODE SNIPPET OF VIEW MODEL CLASS</a>
 <bR><bR>        
 
-In Views folder for the home student listing page, I built a method which allows the current location of a bootcamp student to display on the website with spaces between separate words. This method is necessary because the current location is an Enumeration property with values that are stored with no spaces.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/DisplayEnumLocationValueWithSpaces.cs">CODE SNIPPET OF VIEW MODEL CLASS</a>
+In Views folder for the home student listing page, I built a method which allows the current location of a bootcamp student to display on the website with spaces between separate words. This method is necessary because the current location is an Enumeration property with values that are stored with no spaces.  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/DisplayEnumLocationValueWithSpaces.cs">CODE SNIPPET OF METHOD TO DISPLAY LOCATION WITH SPACES</a>
 <bR><bR><br>        
  
 <B>DATABASE</B> <BR><BR>
