@@ -29,7 +29,7 @@ In the Views folder, I added a search textbox to the page which lists the job ap
 In the ViewModels folder, I created a class designed to display job application details for each student.  For the sake of code readability, I use “this” when assigning the class properties in the constructor.<BR>  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/CreateViewModelForStudentJobApplicationDetails.cs">CODE SNIPPET OF VIEW MODEL CLASS</a> <BR>
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/Code/JPStudentRundown.cs">ENTIRE FILE OF VIEW MODEL CLASS</a>
 
-<bR><bR>        
+<bR>        
 
 In Views folder for the home student listing page, I built a method which allows the current location of a bootcamp student to display on the website with spaces between separate words. This method is necessary because the current location is an Enumeration property with values that are stored with no spaces.<BR>  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/DisplayEnumLocationValueWithSpaces.cs">CODE SNIPPET OF METHOD TO DISPLAY LOCATION WITH SPACES</a> <BR>
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/Code/Index.cshtml">ENTIRE FILE WITH METHOD TO DISPLAY LOCATION WITH SPACES</a>
