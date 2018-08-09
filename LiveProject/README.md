@@ -4,9 +4,9 @@ PROJECT HIGHLITES
 
 <B>BACK END</B>
 
-In the Models folder, I added a calculated property to three separate classes to determine if the class was instantiated within the past week. This was done to track if the following had occurred in the past 7 days: 1) A student had enrolled in the job placement service.   2) A student had applied for a specific job.  3) A student had been hired for a specific job. This property was not mapped to the database to avoid the performance cost of making unnecessary future calls to the database.<br>    
+In the Models folder, I added a calculated property to three separate classes to determine if the class was instantiated within the past week. This was done to track if the following had occurred in the past 7 days: 1) A student had enrolled in the job placement service.   2) A student had applied for a specific job.  3) A student had been hired for a specific job. This property was not mapped to the database to avoid the performance cost of making unnecessary future calls to the database.   
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddCalulatedPropertyToJobApplicationClass.cs">CODE SNIPPET OF CALCULATED PROPERTY</a> 
-<a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/Code/JPApplication.cs">ENTIRE FILE OF CALCULATED PROPERTY</a> 
+<BR><a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/Code/JPApplication.cs">ENTIRE FILE OF CALCULATED PROPERTY</a> 
 <BR><BR>
 Because these three above mentioned classes used the same logic to for the calculated property, I created a helper method to perform the date calculation.
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/HelperMethodCalculateIfObjectInstantiatedWithinPastWeek.cs">CODE SNIPPET OF HELPER METHOD FOR CALCULATED PROPERTY</a>
