@@ -35,7 +35,7 @@ In Views folder for the home student listing page, I built a method which allows
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/Code/Index.cshtml">ENTIRE FILE WITH METHOD TO DISPLAY LOCATION WITH SPACES</a>
 <bR><bR><br>        
  
-<B>DATABASE</B> <BR><BR>
+<B><a id="Database">DATABASE</B></a> <BR><BR>
 In the Models folder, I added a DateTime property called HiredDate to the class which tracked the hiring information for each student.<BR>  <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/CodeSnippets/AddHireDateToStudentJobHiredRecords.cs">CODE SNIPPET OF ADDED DATETIME PROPERTY</a>  
 <a href="https://github.com/pmangione/Tech-Academy-Projects/blob/master/LiveProject/Code/JPHire.cs">ENTIRE FILE WITH ADDED DATETIME PROPERTY</a> 
 <br><br>
