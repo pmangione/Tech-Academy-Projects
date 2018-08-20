@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+<script>
+
+function submitPizzaForm() {
+    if (validateFields(buildValidateFieldsArray()) != "") {
+    	alert(validateFields(buildValidateFieldsArray()));
+        return;
+    }
+       
+    var ReceiptArray = [];
+    
+    ReceiptArray.push([document.PizzaForm.PizzaSize.value,getCosts(document.PizzaForm.PizzaSize.value)]);
+    ReceiptArray = addExtrasToReceiptArray(ReceiptArray,'Meats')
+    ReceiptArray.push(getCrustCheese("PizzaCheese"));
+    ReceiptArray.push(getCrustCheese("PizzaCrust"));
+    ReceiptArray.push([document.PizzaForm.PizzaSauce.value,0.00]);
+    ReceiptArray = addExtrasToReceiptArray(ReceiptArray,'Veggies')
+    
+    var receiptStr = '';
+    for (j=0; j < ReceiptArray.length; j++) {
+    	for (k=0; k < 2; k++)
+        	{
+               if (k == 1) { 
+               		receiptStr += '<b>$' + parseFloat(ReceiptArray[j][k]).toFixed(2) + '        </b>'; 
+               } else {
+               		receiptStr += ReceiptArray[j][k] + '        ';
+               }  
+            }
+         receiptStr += "    <br>";
+    }
+    
+    var totalCost = 0;
+    for (j=0; j < ReceiptArray.length; j++) {
+    	totalCost += ReceiptArray[j][1];
+    }
+    
+    receiptStr += '<br>Total Cost:<b>$'  + parseFloat(totalCost).toFixed(2) + '</b>'; 
+    
+    document.getElementById('PizzaReceipt').innerHTML = receiptStr;
+   
+}
+
+
+function buildValidateFieldsArray() {
+	var validateFieldsArray = [];
+    validateFieldsArray.push(["size",document.PizzaForm.PizzaSize.value]);
+    validateFieldsArray.push(["cheese",document.PizzaForm.PizzaCheese.value]);
+    validateFieldsArray.push(["crust",document.PizzaForm.PizzaCrust.value]);
+    validateFieldsArray.push(["sauce",document.PizzaForm.PizzaSauce.value]);
+    return validateFieldsArray;
+}
+
+function validateFields(validateFieldsArray) {
+    var validateFieldsString = '';
+    for (j=0; j < validateFieldsArray.length; j++) {
+    	if (validateFieldsArray[j][1] == "") {
+        	validateFieldsString += 'You need to select an option for ' + validateFieldsArray[j][0];
+            return validateFieldsString;
+        }
+    }
+    return validateFieldsString;
+}
+
+
+
+function getCosts(costItem) {
+	if (costItem == "Personal") {
+    	return 6.00;
+    }
+    else if (costItem == "Medium") {
+    	return 10.00;
+    }
+    else if (costItem == "Large") {
+    	return 14.00;
+    }
+    else if (costItem == "ExtraLarge") {
+    	return 16.00;
+    }
+    else {
+    	alert("nothing");
+    }
+}
+
+
+function getExtrasFromCheckBox(extraType) {
+    var extraCost = 1.00;
+    var checks = document.getElementsByClassName(extraType);
+    var str = '';
+    var trueCounter = 0;
+    for (i=0;i<checks.length;i++) {
+    	if (checks[i].checked == true) {
+            trueCounter += 1;
+            str += checks[i].value;
+                if (trueCounter < $('input[class='+ extraType +']:checked').length) {
+                	str += ', ';
+                }
+        }
+    }
+    totalExtraCost = ($('input[class=' + extraType + ']:checked').length - 1) * extraCost
+    return [str,totalExtraCost];
+}
+
+
+function addExtrasToReceiptArray(ReceiptArray,extraType) {
+	if ($('input[class=' + extraType + ']:checked').length > 0 ){
+    	ReceiptArray.push(getExtrasFromCheckBox(extraType));
+    }
+    return ReceiptArray;
+}
+
+
+function getCrustCheese(specialtyType) {
+	var specialtyCost = 3.00;
+    var specialtyItem = document.querySelector('input[name = ' + specialtyType + ']:checked').value;
+    if ((specialtyItem == "Extra Cheese") || (specialtyItem == "Cheese Stuffed Crust")) {
+    	cost = specialtyCost;
+    }    
+    else {
+    	cost = 0.00;
+    }
+    return [specialtyItem, cost];    
+}
+
+
+</script>
+
+
+<html>
+<body>
+<form name='PizzaForm'>
+
+
+
+<TABLE>
+   <TR>
+      <TD><input type="radio" name="PizzaSize" value="Personal"> Personal<br>
+<input type="radio" name="PizzaSize" value="Medium"> Medium<br>
+<input type="radio" name="PizzaSize" value="Large"> Large <br>
+<input type="radio" name="PizzaSize" value="ExtraLarge"> Extra Large <br><br><br></TD>
+      <TD><input type="checkbox" class="Meats" value="Pepperoni"> Pepperoni<br>
+<input type="checkbox" class="Meats" value="Sausage"> Sausage<br>
+<input type="checkbox" class="Meats" value="Canadian Bacon"> Canadian Bacon<br>
+<input type="checkbox" class="Meats" value="Ground Beef"> Ground Beef<br>
+<input type="checkbox" class="Meats" value="Anchovy"> Anchovy<br>
+<input type="checkbox" class="Meats" value="Chicken"> Chicken<br></TD>
+   </TR>
+    <TR></TR>
+    <TR></TR>
+    <TR></TR>
+<TR>
+
+</TR>
+<TR>
+<TD>
+<input type="radio" name="PizzaCheese" value="Regular Cheese">Regular Cheese<br>
+<input type="radio" name="PizzaCheese" value="No Cheese">No Cheese<br>
+<input type="radio" name="PizzaCheese" value="Extra Cheese">Extra Cheese<br>
+</TD>
+<TD>
+<br>
+<br>
+<input type="radio" name="PizzaCrust" value="Plain Crust">Plain Crust<br>
+<input type="radio" name="PizzaCrust" value="Garlic Butter Crust">Garlic Butter Crust<br>
+<input type="radio" name="PizzaCrust" value="Cheese Stuffed Crust">Cheese Stuffed Crust<br>
+<input type="radio" name="PizzaCrust" value="Spicy Crust">Spicy Crust<br>
+<input type="radio" name="PizzaCrust" value="House Special Crust">House Special Crust<br>
+</TD>
+</TR>
+  <TR></TR>
+    <TR></TR>
+    <TR></TR>
+<TR></TR>
+<TR>
+<td><input type="radio" name="PizzaSauce" value="Marinara">Marinara<br>
+<input type="radio" name="PizzaSauce" value="White Sauce">White Sauce<br>
+<input type="radio" name="PizzaSauce" value="BBQ Sauce">BBQ Sauce<br>
+<input type="radio" name="PizzaSauce" value="No Sauce">No Sauce<br></td>
+<td>
+<br><br><br><br>
+<input type="checkbox" class="Veggies" value="Tomoatoes"> Tomoatoes<br>
+<input type="checkbox" class="Veggies" value="Onions"> Onions<br>
+<input type="checkbox" class="Veggies" value="Olives"> Olives<br>
+<input type="checkbox" class="Veggies" value="Green Peppers"> Green Peppers<br>
+<input type="checkbox" class="Veggies" value="Mushrooms"> Mushrooms<br>
+<input type="checkbox" class="Veggies" value="Pinapple"> Pinapple<br>
+<input type="checkbox" class="Veggies" value="Spinach"> Spinach<br>
+<input type="checkbox" class="Veggies" value="Jalapeno"> Jalepeno<br>
+</td>
+</TR>
+
+
+</TABLE>
+
+
+
+
+<br><br>
+<input type="submit" onClick='submitPizzaForm(); return false'>
+
+
+
+</form>
+<p id="CheckBoxTest"></p>
+
+
+
+<p id="PizzaReceipt"></text>
+
+
+
+
+</body>
+</html>
